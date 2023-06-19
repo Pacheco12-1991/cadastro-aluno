@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.senac.exercicioaluno.controller.AlunoController">
+   <children>
+      <AnchorPane prefHeight="203.0" prefWidth="580.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Label layoutX="7.0" layoutY="6.0" text="Nome do Aluno" />
+            <TextField fx:id="nome" layoutX="7.0" layoutY="23.0" prefHeight="25.0" prefWidth="566.0" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="23.0" />
+            <Label layoutX="9.0" layoutY="57.0" text="Disciplina" />
+            <TextField fx:id="disciplina" layoutX="7.0" layoutY="77.0" prefHeight="25.0" prefWidth="566.0" AnchorPane.bottomAnchor="101.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="77.0" />
+            <Label layoutX="11.0" layoutY="120.0" text="Nota 1" />
+            <TextField fx:id="nota1" layoutX="54.0" layoutY="116.0" prefHeight="25.0" prefWidth="53.0" />
+            <Label layoutX="123.0" layoutY="120.0" text="Nota 2" />
+            <TextField fx:id="nota2" layoutX="167.0" layoutY="116.0" prefHeight="25.0" prefWidth="53.0" />
+            <Label layoutX="237.0" layoutY="120.0" text="Nota 3" />
+            <TextField fx:id="nota3" layoutX="281.0" layoutY="116.0" prefHeight="25.0" prefWidth="53.0" />
+            <Button fx:id="btnSalvar" layoutX="17.0" layoutY="161.0" mnemonicParsing="false" onAction="#executarSalvar" text="Salvar" />
+            <Button fx:id="btnExcluir" layoutX="82.0" layoutY="161.0" mnemonicParsing="false" onAction="#executarExcluir" text="Excluir" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="389.0" prefWidth="580.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <TableView fx:id="tabelaAlunos" layoutX="-7.0" prefHeight="349.0" prefWidth="589.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="colunaNome" prefWidth="184.0" text="Nome do Aluno" />
+                  <TableColumn fx:id="colunaDisciplina" prefWidth="124.0" text="Disciplina" />
+                  <TableColumn fx:id="colunaNota1" prefWidth="94.0" text="Nota 1" />
+                  <TableColumn fx:id="colunaNota2" prefWidth="94.0" text="Nota 2" />
+                  <TableColumn fx:id="colunaNota3" prefWidth="94.0" text="Nota 3" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
